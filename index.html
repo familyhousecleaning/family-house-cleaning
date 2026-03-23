@@ -104,17 +104,22 @@ padding: 20px;
 </div>
 </section>
 
-<section class="section" id="booking">
-<h2>Book a Cleaning</h2>
-<form action="mailto:familyhousecleaning104@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="Name" placeholder="Your Name" required><br><br>
-<input type="email" name="Email" placeholder="Your Email" required><br><br>
-<input type="text" name="Phone" placeholder="Phone Number"><br><br>
-<input type="date" name="Date"><br><br>
-<textarea name="Details" placeholder="Cleaning details"></textarea><br><br>
-<button class="btn" type="submit">Submit</button>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xeeryqdo"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
-</section>
 
 <section class="section">
 <h2>Contact Us</h2>
